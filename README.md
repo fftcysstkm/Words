@@ -48,8 +48,8 @@ context.startActivity(intent)
 
 # 暗黙的インテントのメモ
 
-`ACTION_VIEW`以外にも色々と汎用インテントがある((
-詳細)[https://developer.android.com/codelabs/basic-android-kotlin-training-activities-intents?hl=ja&continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-kotlin-unit-3-pathway-1%3Fhl%3Dja%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-training-activities-intents#6])。
+`ACTION_VIEW`
+以外にも色々と汎用インテントがある([詳細](https://developer.android.com/codelabs/basic-android-kotlin-training-activities-intents?hl=ja&continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-kotlin-unit-3-pathway-1%3Fhl%3Dja%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-training-activities-intents#6))。
 
 ```kotlin
 // context取得しておく（ほかのアプリ起動に必要のため）
@@ -60,10 +60,10 @@ context.startActivity(intent)
 
 # RecyclerViewのレイアウトマネージャー切り替えメモ
 
-↓こんな感じでRecyclerViewのlayoutManagerプロパティの設定を変えるとレイアウトが変わる。
+↓こんな感じでRecyclerViewのlayoutManagerプロパティの設定を変えるとレイアウトが変わる。 今回は線形とグリッドレイアウトが切り替わる。
 
 ```kotlin
-        if (isLinearLayoutManager) {
+if (isLinearLayoutManager) {
     recyclerView.layoutManager = LinearLayoutManager(this)
 } else {
     recyclerView.layoutManager = GridLayoutManager(this, 4)
